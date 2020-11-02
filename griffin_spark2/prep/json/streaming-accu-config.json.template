@@ -7,7 +7,7 @@
     {
       "name": "src",
       "baseline": true,
-      "connectors": [
+      "connector": 
         {
           "type": "kafka",
           "version": "0.8",
@@ -29,8 +29,7 @@
               "rule": "from_json"
             }
           ]
-        }
-      ],
+        },
       "checkpoint": {
         "type": "json",
         "file.path": "hdfs:///griffin/streaming/dump/source",
@@ -42,7 +41,7 @@
       }
     }, {
       "name": "tgt",
-      "connectors": [
+      "connector": 
         {
           "type": "kafka",
           "version": "0.8",
@@ -64,8 +63,7 @@
               "rule": "from_json"
             }
           ]
-        }
-      ],
+        },
       "checkpoint": {
         "type": "json",
         "file.path": "hdfs:///griffin/streaming/dump/target",

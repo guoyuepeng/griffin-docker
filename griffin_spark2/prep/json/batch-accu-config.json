@@ -7,7 +7,7 @@
     {
       "name": "src",
       "baseline": true,
-      "connectors": [
+      "connector": 
         {
           "type": "hive",
           "version": "1.2",
@@ -16,10 +16,9 @@
             "table.name": "demo_src"
           }
         }
-      ]
     }, {
       "name": "tgt",
-      "connectors": [
+      "connector": 
         {
 
           "type": "hive",
@@ -29,7 +28,6 @@
             "table.name": "demo_tgt"
           }
         }
-      ]
     }
   ],
 

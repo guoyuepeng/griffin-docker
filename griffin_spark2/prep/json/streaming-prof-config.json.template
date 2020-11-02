@@ -6,7 +6,7 @@
   "data.sources": [
     {
       "name": "src",
-      "connectors": [
+      "connector": 
         {
           "type": "kafka",
           "version": "0.8",
@@ -28,8 +28,7 @@
               "rule": "from_json"
             }
           ]
-        }
-      ],
+        },
       "checkpoint": {
         "type": "json",
         "file.path": "hdfs:///griffin/streaming/dump/source",
